@@ -13,14 +13,14 @@
   <application
       android:label="DetectionApp"
       tools:node="merge"
-      tools:replace="exported"
+      tools:replace="android:exported"
 
       >
 
     <!-- Declare TensorFlow Lite DetectorActivity -->
     <activity android:name="org.tensorflow.lite.examples.detection.DetectorActivity"
-        android:exported="true"
-        >
+        android:exported="false"
+        tools:node="remove">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
